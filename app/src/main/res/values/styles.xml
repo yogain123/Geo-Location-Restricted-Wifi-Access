@@ -1,0 +1,158 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <!-- enable window content transitions -->
+        <item name="android:windowContentTransitions">true</item>
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/toolbar_color</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/dark_toolbar_color</item>
+        <!-- colorAccent is used as the default value for colorControlActivated which is used to tint widgets -->
+        <item name="colorAccent">@color/accent_color</item>
+        <!-- other styling for app -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorControlHighlight">@color/light_toolbar_color</item>
+
+        <item name="android:dialogTheme">@style/RoundedDialog</item>
+        <item name="android:windowBackground">@color/fragment_background</item>
+        <item name="android:windowDisablePreview">false</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:textColor">@color/pitch_grey</item>
+    </style>
+
+    <style name="TextViewStyleLight">
+        <item name="android:textColor">@color/medium_grey</item>
+    </style>
+
+    <!-- POSITIVE DIALOG BUTTON THEME START-->
+    <style name="PositiveTextButton" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/primary_button_color</item>
+        <item name="android:text">YES</item>
+    </style>
+    <!-- POSITIVE DIALOG BUTTON THEME END -->
+
+    <!-- NEGATIVE DIALOG BUTTON THEME START-->
+    <style name="NegativeTextButton" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/secondary_button_color</item>
+        <item name="android:text">NO</item>
+    </style>
+    <!-- NEGATIVE DIALOG BUTTON THEME END -->
+
+    <!-- DIALOG BOX THEME START-->
+    <style name="RoundedDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowTitleBackgroundStyle">@style/RoundDialogTitleBackgroundStyle
+        </item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowNoTitle">false</item>
+    </style>
+
+    <style name="RoundDialogTitleBackgroundStyle">
+        <item name="android:background">@color/fragment_background</item>
+        <item name="android:divider">@color/separator_dark</item>
+    </style>
+    <!-- DIALOG BOX THEME END -->
+
+    <!-- DIALOG BOX ANIMATION START-->
+    <style name="PauseDialog" parent="RoundedDialog">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_show</item>
+        <item name="android:windowExitAnimation">@anim/slide_down_hide</item>
+    </style>
+    <!-- DIALOG BOX ANIMATION END -->
+
+    <!-- CARD VIEW START-->
+    <style name="CardViewStyle" parent="CardView">
+        <item name="android:layout_margin">2dp</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardCornerRadius">0dp</item>
+        <item name="cardElevation">3dp</item>
+    </style>
+    <!-- CARD VIEW END -->
+
+    <!-- CARD VIEW NO SHADOW START-->
+    <style name="CardViewStyleNoShadow" parent="CardView">
+        <item name="android:layout_margin">2dp</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardCornerRadius">0dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+    <!-- CARD VIEW NO SHADOW END -->
+
+    <!--AUTO HORIZONTAL SCROLL TEXTVIEW-->
+    <style name="AutoHorizontalScrollTextView">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:state_selected">true</item>
+    </style>
+
+    <!--SINGLE LINE TEXTVIEW-->
+    <style name="SingleLineTextView">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <style name="AppButtonStyle" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textStyle">bold</item>
+        <!-- <item name="fontPath">@string/custom_font_path_bold</item> -->
+        <item name="android:layout_height">@dimen/default_button_height</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontPath">@string/custom_font_bold</item>
+    </style>
+
+    <!--ROUND BUTTON WITH MARGIN-->
+    <style name="RoundedButtonWithMargin" parent="AppButtonStyle">
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <!--ROUND BUTTON-->
+    <style name="RoundedButtonWithoutMargin" parent="AppButtonStyle"></style>
+
+    <style name="SecondaryRoundedButton" parent="RoundedButtonWithMargin">
+        <item name="android:background">@color/secondary_button_color</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <style name="PrimaryRoundedButton" parent="RoundedButtonWithMargin">
+        <item name="android:background">@color/primary_button_color</item>
+    </style>
+
+    <style name="AlertRoundedButton" parent="RoundedButtonWithMargin">
+        <item name="android:background">@color/alert_button_color</item>
+    </style>
+
+    <style name="SecondaryRoundedButtonWithoutMargin" parent="RoundedButtonWithoutMargin">
+        <item name="android:background">@color/secondary_button_color</item>
+    </style>
+
+    <style name="PrimaryRoundedButtonWithoutMargin" parent="RoundedButtonWithoutMargin">
+        <item name="android:background">@color/primary_button_color</item>
+    </style>
+
+    <style name="AlertRoundedButtonWithoutMargin" parent="RoundedButtonWithoutMargin">
+        <item name="android:background">@color/alert_button_color</item>
+    </style>
+
+</resources>

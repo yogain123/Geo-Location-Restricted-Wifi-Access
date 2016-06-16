@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_orders"
+            android:title="@string/nav_drawer_item_order" />
+
+        <item
+            android:id="@+id/nav_payout"
+            android:title="@string/nav_drawer_item_payout" />
+
+        <!--<item
+            android:id="@+id/nav_fino"
+            android:title="@string/nav_drawer_item_fino_screen" />-->
+
+        <item
+            android:actionLayout="@layout/separator"
+            android:title="" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:title="@string/nav_drawer_item_my_profile" />
+
+        <!--<item
+            android:id="@+id/nav_rider_referral"
+            android:title="@string/nav_drawer_item_rider_referral" />-->
+
+        <item
+            android:id="@+id/nav_help"
+            android:title="@string/nav_drawer_item_help" />
+
+        <item
+            android:id="@+id/nav_about_app"
+            android:title="@string/nav_drawer_item_about_app" />
+
+        <item
+            android:id="@+id/nav_force_sync"
+            android:title="@string/nav_drawer_item_force_sync" />
+
+    </group>
+
+</menu>

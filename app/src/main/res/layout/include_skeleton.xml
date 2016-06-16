@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarLayout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <include
+        android:id="@+id/toolbarShadowLayout"
+        layout="@layout/shadow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/toolbarLayout" />
+
+    <LinearLayout
+        android:id="@+id/pageLoadingIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:background="@drawable/circle_white_with_shadow"
+        android:visibility="gone">
+
+        <include layout="@layout/app_loading_indicator"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/embeddedFragmentLoadingIndicator"
+        layout="@layout/embedded_fragment_view_loading_indicator"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="pitch_grey">#424240</color>
+    <color name="soft_grey">#555555</color>
+    <color name="medium_grey">#777777</color>
+    <color name="light_grey">#999999</color>
+    <color name="medium_light_grey">#CCCCCC</color>
+    <color name="super_light_grey">#EEEEEE</color>
+    <color name="bright_grey">#F6F6F6</color>
+    <color name="ultra_light_grey">#FDFDFD</color>
+
+    <!-- <color name="official_red">#D8433D</color>
+    <color name="lighter_official_red">#FF7670</color>
+    <color name="dark_color">#990000</color> -->
+    <color name="fb_color">#3B5998</color>
+    <color name="teal">#009688</color>
+    <color name="light_teal">#5DE5DA</color>
+    <color name="yellow">#ffd600</color>
+    <color name="orange">#ffab40</color>
+    <color name="btn_blue">#0099CC</color>
+    <color name="btn_green">#669900</color>
+    <color name="indigo">#536DFE</color>
+
+    <color name="toolbar_color">#E74C3C</color>
+    <color name="light_toolbar_color">#FF7670</color>
+    <color name="dark_toolbar_color">#B41909</color>
+    <color name="accent_color">#263357</color>
+
+    <color name="fragment_background">#FFFFFF</color>
+
+    <color name="alert_button_color">#5DE5DA</color>
+    <color name="primary_button_color">#E74C3C</color>
+    <color name="secondary_button_color">#41434A</color>
+
+    <color name="separator">#F7F7F7</color>
+    <color name="separator_medium_dark">#EEEEEE</color>
+    <color name="separator_dark">#CCCCCC</color>
+
+    <color name="primary_notification_color">#E74C3C</color>
+
+    <color name="horizontal_slider_background">#FDFDFD</color>
+    <color name="horizontal_selected_slider_title">#FF2024</color>
+    <color name="horizontal_slider_title">#424240</color>
+    <color name="horizontal_selected_slider_subtitle">#424240</color>
+    <color name="horizontal_slider_subtitle">#999999</color>
+
+</resources>

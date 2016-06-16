@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/app_circular_loading_indicator_radius"
+    android:layout_height="@dimen/app_circular_loading_indicator_radius"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal|bottom"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <include layout="@layout/app_circular_progress_bar" />
+</LinearLayout>
